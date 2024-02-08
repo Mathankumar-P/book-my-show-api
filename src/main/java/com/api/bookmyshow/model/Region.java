@@ -11,7 +11,6 @@ public class Region extends BaseModel {
     private String name;
     private double longitude;
     private double latitude;
-
     @OneToMany(mappedBy = "region")
     private List<Theater> theaterList;
 
