@@ -10,4 +10,5 @@ public class Seat extends BaseModel{
     private int colNum;
     @Enumerated
     private SeatType seatType;
+
 }

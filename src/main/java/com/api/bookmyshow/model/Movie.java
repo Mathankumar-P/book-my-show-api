@@ -3,14 +3,14 @@ package com.api.bookmyshow.model;
 import jakarta.annotation.security.DenyAll;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity(name = "movies")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Getter
+@Setter
 public class Movie extends BaseModel {
     private String name;
     private String language;
